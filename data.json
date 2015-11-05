@@ -1,0 +1,66 @@
+{
+	"prtg-version":"15.1.15.2022",
+	"treesize":3,
+	"sensors":[
+		{
+			"device":"Kwintet P2C",
+			"group":"KWINTETP2C",
+			"status":"Down",
+			"status_raw":5,
+			"priority":3,
+			"tags":"wmiservicesensor",
+			"downtimesince":"38 m 44 s",
+			"downtimesince_raw":2314
+		},
+		{
+			"device":"HTTP - Erenfred Pedersen",
+			"group":"Rød",
+			"status":"Down   (simulated error)",
+			"status_raw":5,
+			"priority":3,
+			"tags":"httpsensor",
+			"downtimesince":"1 h 7 m",
+			"downtimesince_raw":4040
+		},
+		{
+			"device":"Kwintet",
+			"group":"Group",
+			"status":"Down",
+			"status_raw":5,
+			"priority":2,
+			"tags":"wmiservicesensor servicesensor",
+			"downtimesince":"38 m 44 s",
+			"downtimesince_raw":2314
+		},
+		{
+			"device":"Device",
+			"group":"Grøn",
+			"status":"Down",
+			"status_raw":5,
+			"priority":4,
+			"tags":"httpsensor",
+			"downtimesince":"1 h 19 m",
+			"downtimesince_raw":40400
+		},
+		{
+			"device":"SQL - monitors",
+			"group":"Wupti SQL01",
+			"status":"Down",
+			"status_raw":5,
+			"priority":5,
+			"tags":"sqlsensor RedTeam",
+			"downtimesince":"9 h 33 m",
+			"downtimesince_raw":34391
+		},
+		{
+			"device":"something SQL - monitors",
+			"group":"Wupti SQL01",
+			"status":"Down",
+			"status_raw":5,
+			"priority":3,
+			"tags":"sqlsensor RedTeam",
+			"downtimesince":"9 h 33 m",
+			"downtimesince_raw":34391
+		}
+	]
+}

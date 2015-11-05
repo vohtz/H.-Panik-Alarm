@@ -1,0 +1,93 @@
+/* _var */
+$redAlarm: #880000;
+$greenAlarm: #028800;
+$yellowAlarm: #EAE300;
+
+/* _fonts */
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+
+/* Styling */
+body{
+	background-color: #000;
+	color: #fff;
+	font-family: "Titillium Web", san-serif;
+}
+header{
+	height: 250px;
+	img{
+		height: 100%;
+		padding: 90px;
+		box-sizing: border-box;
+	}
+}
+.indicator{
+	background-color: $yellowAlarm;
+	&.green{
+		background-color: $greenAlarm;
+	}
+	&.red{
+		background-color: $redAlarm;
+		animation-duration: 1s;
+		animation-name: redGlow;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+}
+.circle{
+	border-radius: 100%;
+	height: 40vh;
+	width: 40vh;
+	margin: 0 auto 50px;
+	span {
+	    display: inline-block;
+	    width: 100%;
+	    height: 100%;
+	    text-align: center;
+	    vertical-align: middle;
+	    box-sizing: border-box;
+	    padding: 50% 0;
+	    line-height: 0;
+	    font-size: 15em;
+	}
+}
+.list {
+	width: 75%;
+	margin: 0 auto;
+	font-size: 3em;
+	.listItem{
+		width: 100%;
+		display:none;
+		&:nth-child(-n+3){
+			display: block;
+		}
+		div{
+			display: inline-block;
+			text-align: center;
+		    width: 32.5%;
+		    position: relative;
+		    vertical-align: text-top;
+			&:nth-child(2){
+				&:before{
+					content: "-";
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+				&:after{
+					content: "-";
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+			}
+		}
+	}
+}
+@keyframes redGlow{
+	from {
+		box-shadow: 0px 0px 25px $redAlarm;
+	}
+	to {
+		box-shadow: 0px 0px 200px $redAlarm;
+	}
+}
